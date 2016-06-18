@@ -2,7 +2,12 @@
 
 import uritemplate
 import jsonpointer
-import urlparse
+
+try:
+    from urllib.parse import urlparse
+except ImportError:
+    import urlparse
+
 import json
 
 from jsonschema import SchemaError, validate, ValidationError, RefResolver
