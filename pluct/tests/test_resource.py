@@ -90,7 +90,7 @@ class ResourceTestCase(BaseTestCase):
 
     def test_iter(self):
         iterated = [i for i in self.result]
-        self.assertEqual(iterated, self.data.keys())
+        self.assertEqual(iterated, list(self.data.keys()))
 
     def test_schema(self):
         self.assertEqual(self.schema.url, self.result.schema.url)

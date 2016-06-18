@@ -6,7 +6,7 @@ except ImportError:
     try:
         from collections import IterableUserDict  # noqa
     except ImportError:
-        from collections import UserDict as IterableUserDict
+        from collections import UserDict as IterableUserDict  # noqa
 
 
 try:

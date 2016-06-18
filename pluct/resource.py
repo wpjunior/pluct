@@ -4,7 +4,7 @@ import uritemplate
 import jsonpointer
 
 try:
-    from urllib.parse import urlparse
+    from urllib import parse as urlparse
 except ImportError:
     import urlparse
 
